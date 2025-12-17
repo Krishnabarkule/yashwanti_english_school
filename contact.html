@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Contact Us - Yashwanti English School</title>
+
+		<!-- Bootstrap CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+
+		<!-- Bootstrap Icons -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.min.css"
+		/>
+
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<!-- Navigation -->
+		<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+			<div class="container">
+				<a class="navbar-brand" href="index.html">
+					<i class="bi bi-book"></i> Yashwanti English School
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNav"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="about.html">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="principal.html">Principal's Message</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="faculty.html">Faculty</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="gallery.html">Gallery</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="news.html">News</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Page Header -->
+		<section class="hero-section" style="padding: 100px 0 60px">
+			<div class="container">
+				<div class="text-center hero-content">
+					<h1>Contact Us</h1>
+					<p class="tagline">We'd Love to Hear From You</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Contact Information -->
+		<section class="section contact-section">
+			<div class="container">
+				<div class="text-center mb-5">
+					<h2 class="section-title">Get In Touch</h2>
+					<p class="section-subtitle">
+						Reach out to us for admissions, inquiries, or any questions
+					</p>
+				</div>
+				<div class="row mb-5">
+					<div class="col-md-4 mb-4">
+						<div class="contact-info-card">
+							<div class="contact-icon">
+								<i class="bi bi-geo-alt-fill"></i>
+							</div>
+							<h5 class="text-primary-blue">Visit Us</h5>
+							<p class="mb-0">
+								Yashwanti School Campus<br />Jaipur, India<br />United States
+							</p>
+						</div>
+					</div>
+					<div class="col-md-4 mb-4">
+						<div class="contact-info-card">
+							<div class="contact-icon">
+								<i class="bi bi-telephone-fill"></i>
+							</div>
+							<h5 class="text-primary-blue">Call Us</h5>
+							<p class="mb-0">
+								Main Office: +1 (555) 123-4567<br />Admissions: +1 (555)
+								123-4568<br />Mon - Fri: 8:00 AM - 4:00 PM
+							</p>
+						</div>
+					</div>
+					<div class="col-md-4 mb-4">
+						<div class="contact-info-card">
+							<div class="contact-icon">
+								<i class="bi bi-envelope-fill"></i>
+							</div>
+							<h5 class="text-primary-blue">Email Us</h5>
+							<p class="mb-0">
+								General: info@yashwanti.edu<br />Admissions:
+								admissions@yashwanti.edu<br />Principal: principal@yashwanti.edu
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Contact Form -->
+				<div class="row">
+					<div class="col-lg-8 mx-auto">
+						<div class="card">
+							<div class="card-body p-4">
+								<h3 class="text-center text-primary-blue mb-4">
+									Send Us a Message
+								</h3>
+								<div class="alert alert-info mb-4">
+									<i class="bi bi-info-circle"></i>
+									<strong>How It Works:</strong> Your message will be
+									automatically routed to the respective department based on the
+									subject you select. You'll receive a confirmation and our team
+									will respond to you as soon as possible.
+								</div>
+								<form id="contactForm">
+									<div class="row">
+										<div class="col-md-6 mb-3">
+											<label for="name" class="form-label">Full Name *</label>
+											<input
+												type="text"
+												class="form-control"
+												id="name"
+												required
+											/>
+										</div>
+										<div class="col-md-6 mb-3">
+											<label for="email" class="form-label"
+												>Email Address *</label
+											>
+											<input
+												type="email"
+												class="form-control"
+												id="email"
+												required
+											/>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6 mb-3">
+											<label for="phone" class="form-label">Phone Number</label>
+											<input type="tel" class="form-control" id="phone" />
+										</div>
+										<div class="col-md-6 mb-3">
+											<label for="subject" class="form-label">Subject *</label>
+											<select class="form-control" id="subject" required>
+												<option value="">Select a subject</option>
+												<option value="admissions">Admissions Inquiry</option>
+												<option value="general">General Information</option>
+												<option value="academics">Academic Programs</option>
+												<option value="facilities">
+													Facilities & Infrastructure
+												</option>
+												<option value="careers">Career Opportunities</option>
+												<option value="feedback">Feedback & Suggestions</option>
+												<option value="other">Other</option>
+											</select>
+										</div>
+									</div>
+									<div class="mb-3">
+										<label for="message" class="form-label">Message *</label>
+										<textarea
+											class="form-control"
+											id="message"
+											rows="5"
+											required
+										></textarea>
+									</div>
+									<div class="text-center">
+										<button type="submit" class="btn btn-primary btn-lg">
+											<i class="bi bi-send"></i> Send Message
+										</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Map Section -->
+		<section class="section">
+			<div class="container">
+				<div class="text-center mb-4">
+					<h2 class="section-title">Find Us on Map</h2>
+					<p class="section-subtitle">
+						Visit our campus and see our facilities
+					</p>
+				</div>
+				<div class="map-container">
+					<!-- Google Maps Embed -->
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d237.66130769477277!2d76.13559613393069!3d19.810119861417284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bda61dcb869dc1f%3A0x42f0f1c52d8e0aad!2sYASHVANTI%20ENGLISH%20SCHOOL%20MANEGAON%20(J)!5e1!3m2!1sen!2sin!4v1765986581140!5m2!1sen!2sin"
+						allowfullscreen=""
+						loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"
+					>
+					</iframe>
+				</div>
+			</div>
+		</section>
+
+		<!-- Office Hours -->
+		<section class="section bg-light-blue">
+			<div class="container">
+				<div class="text-center mb-5">
+					<h2 class="section-title">Office Hours</h2>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-lg-8">
+						<div class="card">
+							<div class="card-body p-4">
+								<div class="row">
+									<div class="col-md-6 mb-3">
+										<h5 class="text-primary-blue">
+											<i class="bi bi-clock"></i> School Office
+										</h5>
+										<p class="mb-2">
+											<strong>Monday - Friday:</strong> 8:00 AM - 4:00 PM
+										</p>
+										<p class="mb-0">
+											<strong>Saturday:</strong> 9:00 AM - 1:00 PM
+										</p>
+										<p><strong>Sunday:</strong> Closed</p>
+									</div>
+									<div class="col-md-6 mb-3">
+										<h5 class="text-primary-blue">
+											<i class="bi bi-person-badge"></i> Admissions Office
+										</h5>
+										<p class="mb-2">
+											<strong>Monday - Friday:</strong> 9:00 AM - 5:00 PM
+										</p>
+										<p class="mb-0">
+											<strong>Saturday:</strong> 10:00 AM - 2:00 PM
+										</p>
+										<p><strong>Sunday:</strong> By Appointment Only</p>
+									</div>
+								</div>
+								<div class="alert alert-info mt-3 mb-0">
+									<i class="bi bi-info-circle"></i>
+									<strong>Note:</strong> School remains closed on public
+									holidays and during summer vacation (June - July). Please call
+									ahead to confirm availability during holiday seasons.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Department Contacts -->
+		<section class="section">
+			<div class="container">
+				<div class="text-center mb-5">
+					<h2 class="section-title">Department Contacts</h2>
+					<p class="section-subtitle">
+						Direct contact information for specific departments
+					</p>
+				</div>
+				<div class="row">
+					<div class="col-md-6 col-lg-4 mb-4">
+						<div class="card h-100">
+							<div class="card-body text-center">
+								<i
+									class="bi bi-mortarboard"
+									style="font-size: 2.5rem; color: var(--secondary-blue)"
+								></i>
+								<h5 class="card-title mt-3">Admissions</h5>
+								<p class="card-text">
+									For new admissions and enrollment queries
+								</p>
+								<p class="mb-0">
+									<i class="bi bi-telephone"></i> +1 (555) 123-4568<br />
+									<i class="bi bi-envelope"></i> admissions@yashwanti.edu
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-4 mb-4">
+						<div class="card h-100">
+							<div class="card-body text-center">
+								<i
+									class="bi bi-book"
+									style="font-size: 2.5rem; color: var(--secondary-blue)"
+								></i>
+								<h5 class="card-title mt-3">Academics</h5>
+								<p class="card-text">
+									Academic programs and curriculum information
+								</p>
+								<p class="mb-0">
+									<i class="bi bi-telephone"></i> +1 (555) 123-4569<br />
+									<i class="bi bi-envelope"></i> academics@yashwanti.edu
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-4 mb-4">
+						<div class="card h-100">
+							<div class="card-body text-center">
+								<i
+									class="bi bi-cash-coin"
+									style="font-size: 2.5rem; color: var(--secondary-blue)"
+								></i>
+								<h5 class="card-title mt-3">Accounts</h5>
+								<p class="card-text">Fee payment and financial queries</p>
+								<p class="mb-0">
+									<i class="bi bi-telephone"></i> +1 (555) 123-4570<br />
+									<i class="bi bi-envelope"></i> accounts@yashwanti.edu
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-4 mb-4">
+						<div class="card h-100">
+							<div class="card-body text-center">
+								<i
+									class="bi bi-trophy"
+									style="font-size: 2.5rem; color: var(--secondary-blue)"
+								></i>
+								<h5 class="card-title mt-3">Sports</h5>
+								<p class="card-text">Sports programs and athletic activities</p>
+								<p class="mb-0">
+									<i class="bi bi-telephone"></i> +1 (555) 123-4571<br />
+									<i class="bi bi-envelope"></i> sports@yashwanti.edu
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-4 mb-4">
+						<div class="card h-100">
+							<div class="card-body text-center">
+								<i
+									class="bi bi-bus-front"
+									style="font-size: 2.5rem; color: var(--secondary-blue)"
+								></i>
+								<h5 class="card-title mt-3">Transport</h5>
+								<p class="card-text">School bus routes and transportation</p>
+								<p class="mb-0">
+									<i class="bi bi-telephone"></i> +1 (555) 123-4572<br />
+									<i class="bi bi-envelope"></i> transport@yashwanti.edu
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-4 mb-4">
+						<div class="card h-100">
+							<div class="card-body text-center">
+								<i
+									class="bi bi-laptop"
+									style="font-size: 2.5rem; color: var(--secondary-blue)"
+								></i>
+								<h5 class="card-title mt-3">IT Support</h5>
+								<p class="card-text">
+									Technical support and online portal help
+								</p>
+								<p class="mb-0">
+									<i class="bi bi-telephone"></i> +1 (555) 123-4573<br />
+									<i class="bi bi-envelope"></i> itsupport@yashwanti.edu
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- FAQ Section -->
+		<section class="section bg-light-blue">
+			<div class="container">
+				<div class="text-center mb-5">
+					<h2 class="section-title">Frequently Asked Questions</h2>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-lg-10">
+						<div class="accordion" id="faqAccordion">
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button
+										class="accordion-button"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#faq1"
+									>
+										What are the admission requirements?
+									</button>
+								</h2>
+								<div
+									id="faq1"
+									class="accordion-collapse collapse show"
+									data-bs-parent="#faqAccordion"
+								>
+									<div class="accordion-body">
+										Admission requirements vary by grade level. Generally, we
+										require birth certificate, previous school records, medical
+										records, and completed application form. For detailed
+										requirements, please contact our admissions office or visit
+										during office hours.
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button
+										class="accordion-button collapsed"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#faq2"
+									>
+										What is the student-teacher ratio?
+									</button>
+								</h2>
+								<div
+									id="faq2"
+									class="accordion-collapse collapse"
+									data-bs-parent="#faqAccordion"
+								>
+									<div class="accordion-body">
+										We maintain a healthy student-teacher ratio of approximately
+										20:1, ensuring personalized attention and effective learning
+										for every student.
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button
+										class="accordion-button collapsed"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#faq3"
+									>
+										Do you provide transportation facilities?
+									</button>
+								</h2>
+								<div
+									id="faq3"
+									class="accordion-collapse collapse"
+									data-bs-parent="#faqAccordion"
+								>
+									<div class="accordion-body">
+										Yes, we provide safe and reliable school bus transportation
+										covering major areas of the city. Bus routes and fees can be
+										obtained from our transport department.
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button
+										class="accordion-button collapsed"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#faq4"
+									>
+										What extra-curricular activities are offered?
+									</button>
+								</h2>
+								<div
+									id="faq4"
+									class="accordion-collapse collapse"
+									data-bs-parent="#faqAccordion"
+								>
+									<div class="accordion-body">
+										We offer a wide range of activities including sports
+										(basketball, football, swimming), arts (music, dance,
+										drama), clubs (robotics, debate, environmental), and various
+										cultural programs throughout the year.
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button
+										class="accordion-button collapsed"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#faq5"
+									>
+										How can I schedule a campus tour?
+									</button>
+								</h2>
+								<div
+									id="faq5"
+									class="accordion-collapse collapse"
+									data-bs-parent="#faqAccordion"
+								>
+									<div class="accordion-body">
+										Campus tours can be scheduled by calling our admissions
+										office at +1 (555) 123-4568 or by filling out the contact
+										form above. Tours are typically conducted on weekdays
+										between 10:00 AM and 2:00 PM.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 mb-4">
+						<h5>Yashwanti English School</h5>
+						<p>
+							Committed to excellence in education and holistic development of
+							students since 1985.
+						</p>
+						<div class="social-links mt-3">
+							<a href="#"><i class="bi bi-facebook"></i></a>
+							<a href="#"><i class="bi bi-twitter"></i></a>
+							<a href="#"><i class="bi bi-instagram"></i></a>
+							<a
+								href="https://www.youtube.com/@yashvantibajiumrad2808"
+								target="_blank"
+								><i class="bi bi-youtube"></i
+							></a>
+						</div>
+					</div>
+					<div class="col-md-4 mb-4">
+						<h5>Quick Links</h5>
+						<a href="about.html">About School</a>
+						<a href="principal.html">Principal's Message</a>
+						<a href="faculty.html">Our Faculty</a>
+						<a href="gallery.html">Photo Gallery</a>
+						<a href="news.html">News & Events</a>
+					</div>
+					<div class="col-md-4 mb-4">
+						<h5>Contact Us</h5>
+						<p>
+							<i class="bi bi-geo-alt"></i> Yashwanti School Campus<br />Jaipur,
+							India
+						</p>
+						<p><i class="bi bi-telephone"></i> +1 (555) 123-4567</p>
+						<p><i class="bi bi-envelope"></i> info@yashwanti.edu</p>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<p>&copy; 2025 Yashwanti English School. All rights reserved.</p>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Bootstrap JS -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+		<!-- Custom JS -->
+		<script src="js/main.js"></script>
+	</body>
+</html>
